@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#logo {
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  padding: 1.5vw;
+  margin-left: 15vw;
+}
+input[type="checkbox"],
+label {
+  display: none;
+}
+.nav {
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  display: flex;
+  background-color: rgb(119, 211, 206);
+}
+ul {
+  height: 60px;
+  width: 100%;
+  margin-right: 15%;
+}
+ul li {
+  margin-top: 10px;
+  margin-right: 5%;
+  padding: 10px;
+  float: right;
+  display: inline;
+}
+ul,
+li,
+a {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+a:hover {
+  color: white;
+  padding: 3px;
+}
+
+/* monitores menores q 1000 px
+*/
+@media screen and (max-width: 1000px) {
+  #logo {
+    margin: 0;
+    margin-top: 6px;
+  }
+  ul {
+    margin-right: 0;
+  }
+}
+
+/* monitores menores q 760 px
+*/
+@media screen and (max-width: 760px) {
+  label {
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    margin: 10px;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked ~ nav {
+    display: none;
+  }
+  #barra {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(119, 211, 206);
+  }
+
+  nav {
+    width: 35vw;
+    height: 100vh;
+  }
+
+  ul li {
+    text-align: center;
+    padding: 1.2vh;
+    margin: 0;
+    width: 35vw;
+    display: block;
+  }
+}
