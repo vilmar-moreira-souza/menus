@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"] ,label {
+            display: none;
+        }
+
+        
+        nav {
+            height: 50px;
+            background: rgb(0 100 200);
+            display: flex;           
+            justify-content: space-around;            
+        }
+
+        nav ul{
+            display: flex;
+            background: blue;
+            align-items: center;
+            
+        }
+        nav ul li {
+            list-style: none;
+            background: red;
+        }
+
+
+        @media (max-width: 960px) {
+            #ch:checked~nav {
+                display: none;
+            }
+        label{        
+            background: rgb(0 100 200);
+            display: flex;
+            height: 40px;
+        }
+            nav {               
+             
+                display: block;
+                width: 50%;
+
+            }
+            nav ul{
+                display: block;
+               background: blue;
+            }
+            nav ul li {
+                display: flex;              
+                justify-content: center;
+                padding: 10%;
+                font-size: 25px;
+                border: 2px solid;
+                border-radius: 5%;
+
+            }
+    </style>
+</head>
+
+<body>
+
+    <input type="checkbox" id="ch">
+    <label for="ch"> <img src="/ss" alt="iimg"></label>
+
+    <nav>
+        <ul>
+            <li>oi</li>
+        </ul>
+        <ul>
+            <li>oi</li>
+        </ul>
+        <ul>
+            <li>oi</li>
+        </ul>
+        <ul>
+            <li>oi</li>
+        </ul>
+    </nav>
+
+</body></html>
