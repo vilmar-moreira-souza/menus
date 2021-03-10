@@ -9,9 +9,10 @@
       * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
       body {
-        background-color: #f9f9f9;
+        background-color: rgba(0,0,0,.2);
       }
 
       #check {
@@ -28,7 +29,7 @@
         height: 100%;
         width: 300px;
         position: absolute;
-        transition: all 0.2s linear;
+        transition: all 0.3s linear;
         left: -300px;
       }
       nav {
@@ -59,7 +60,7 @@
       #check:checked ~ .barra nav a .link {
         opacity: 1;
         margin-top: 0;
-        transition-delay: 0.2s;
+        transition-delay: 0.3s;
       }
     </style>
   </head>
